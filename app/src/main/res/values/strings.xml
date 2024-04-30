@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sprachschatz</string>
+    <string name="wortterbuch" />
+    <string name="artikel" />
+    <string name="satzkorrektur" />
+    <string name="gramatik" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accessibility_service_description">Sprachschatz</string>
+    <string name="search">Search...</string>
+    <string name="to">To</string>
+    <string name="translate">TRANSLATE</string>
+    <string name="from">From</string>
+    <string name="enter_your_sentence">Enter your sentence</string>
+    <string name="word">English Vocabulary</string>
+</resources>

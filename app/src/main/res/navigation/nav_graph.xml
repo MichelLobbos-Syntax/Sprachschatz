@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/translateFragment">
+
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="de.syntax.androidabschluss.ui.TranslateFragment"
+        android:label="fragment_translate"
+        tools:layout="@layout/fragment_translate" />
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="de.syntax.androidabschluss.ui.DictionaryFragment"
+        android:label="fragment_dictionary"
+        tools:layout="@layout/fragment_dictionary" >
+    </fragment>
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="de.syntax.androidabschluss.ui.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+    </fragment>
+
+    <fragment
+    android:id="@+id/grammarFragment"
+    android:name="de.syntax.androidabschluss.ui.GrammarFragment"
+    android:label="fragment_grammar"
+    tools:layout="@layout/fragment_grammar" >
+
+
+        <action
+            android:id="@+id/action_grammarFragment_to_grammarDetailFragment"
+            app:destination="@id/grammarDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/grammarDetailFragment"
+        android:name="de.syntax.androidabschluss.ui.GrammarDetailFragment"
+        android:label="fragment_grammar_detail"
+        tools:layout="@layout/fragment_grammar_detail" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

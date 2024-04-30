@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_welcome"
+    app:startDestination="@id/welcomeFragment">
+    <activity
+        android:id="@+id/mainActivity3"
+        android:name="de.syntax.androidabschluss.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main"/>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainActivity3"
+            app:destination="@id/mainActivity3" />
+        <action
+            android:id="@+id/action_loginFragment_to_registierenFragment"
+            app:destination="@id/registierenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="de.syntax.androidabschluss.ui.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_registierenFragment"
+            app:destination="@id/registierenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registierenFragment"
+        android:name="de.syntax.androidabschluss.ui.authentication.RegistierenFragment"
+        android:label="RegistierenFragment"
+        tools:layout="@layout/fragment_registieren">
+        <action
+            android:id="@+id/action_registierenFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+</navigation>

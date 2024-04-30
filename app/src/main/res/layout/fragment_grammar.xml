@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GrammarFragment">
+
+    <EditText
+        android:id="@+id/editTextSearch"
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/strock"
+        android:hint="@string/search"
+        android:textColorHint="@color/hint"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/lup"
+        android:layout_width="23dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/ic_lup"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSearch"
+        app:layout_constraintStart_toStartOf="@+id/editTextSearch"
+        app:layout_constraintTop_toTopOf="@+id/editTextSearch" />
+
+    <ImageButton
+        android:id="@+id/mike"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_microphone"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSearch"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSearch"
+        app:layout_constraintTop_toTopOf="@+id/editTextSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_grammatik"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch"
+        app:layout_constraintVertical_bias="0.0"
+        app:spanCount="2"
+        tools:listitem="@layout/item_grammatik" />
+</androidx.constraintlayout.widget.ConstraintLayout>

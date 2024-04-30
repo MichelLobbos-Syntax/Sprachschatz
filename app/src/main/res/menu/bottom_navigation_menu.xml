@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/translateFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Translate"
+
+        android:icon="@drawable/ic_translate" />
+
+    <item
+        android:id="@+id/savedFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Saved"
+        android:icon="@drawable/ic_saved" />
+    <item
+    android:id="@+id/dictionaryFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:title="Dictionary"
+
+        android:icon="@drawable/ic_dictionary" />
+    <item
+        android:id="@+id/grammarFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Grammar"
+        android:icon="@drawable/ic_grammar" />
+</menu>
