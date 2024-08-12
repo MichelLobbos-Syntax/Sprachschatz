@@ -31,7 +31,7 @@
 </ul>
 
 <h2 id="geplantes-design">Geplantes Design</h2>
-<p><em>Bilder</em></p>
+
 <img src="https://github.com/user-attachments/assets/669adda7-f477-4bed-9aed-683bade16532" alt="anmelden" width="200">
 <img src="https://github.com/user-attachments/assets/d820d0c2-76d9-429e-ac1f-7e58cff192d1" alt="anmelden" width="200">
 <img src="https://github.com/user-attachments/assets/0c2b5a09-8df6-4a38-b395-c8d2c7028359" alt="anmelden" width="200">
